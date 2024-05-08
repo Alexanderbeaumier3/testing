@@ -1,0 +1,13 @@
+.admin {
+    display: flex;
+}
+
+.admin .sidebar {
+    flex: 0 0 250px;
+}
+
+.admin .content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+}

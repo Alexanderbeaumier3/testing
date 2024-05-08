@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+
+.navbar__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin-left: 5%; /* adds left margin to the content */
+}
+
+.navbar__title, .navbar__middle {
+    margin: 10px;
+}
+
+.navbar__title {
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar__middle {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar__logout {
+    color: #ecf0f1;
+    background-color: #e74c3c;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.navbar__logout:hover {
+    background-color: #c0392b;
+}
+
+/* Styles for screens 1280px and up */
+@media screen and (min-width: 1280px) {
+    .navbar__title {
+        font-size: 2.5em;
+    }
+
+    .navbar__middle {
+        font-size: 2em;
+    }
+}
+
+/* Styles for screens 1024px and up */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .navbar__title {
+        font-size: 2em;
+    }
+
+    .navbar__middle {
+        font-size: 1.7em;
+    }
+}
+
+/* Styles for screens 800px and up */
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+    .navbar__title {
+        font-size: 1.7em;
+    }
+
+    .navbar__middle {
+        font-size: 1.4em;
+    }
+}
+
+/* Styles for screens 600px and up */
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    .navbar__title {
+        font-size: 1.4em;
+    }
+
+    .navbar__middle {
+        font-size: 1.2em;
+    }
+}
+
+/* Styles for screens smaller than 600px */
+@media screen and (max-width: 599px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__title, 
+    .navbar__middle {
+        font-size: 1em;
+    }
+
+    .navbar__logout {
+        width: 100%;
+        text-align: center;
+    }
+}
